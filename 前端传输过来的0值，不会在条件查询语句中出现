@@ -1,0 +1,6 @@
+今天在mybatis查询时，遇到这种问题：如果传进来的is_draft值为0 ，直接跳出if不执行，在SQL拼接时，都没有这个条件，
+
+问题在于is_draft参数类型
+’’ != is_draft 只能作用于string类型，若int 、double、float等类型的参数默认值为0 ，将直接跳出if，
+解决问题的方法很简单，删掉后面的空字符串判断即可
+详情可参见这篇博客：https://www.cnblogs.com/mengw/p/12056205.html
