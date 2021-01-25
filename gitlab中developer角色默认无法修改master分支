@@ -1,0 +1,7 @@
+ 问题：
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to '172.30.14.161:oa/oa-parent.git'
+解决：
+1、开放master的保护分支
+2、修改master的修改级别至developer
+3、修改开发者权限至master
